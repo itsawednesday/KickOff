@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "626140359495",
+    "project_id": "studentkick-7c190",
+    "storage_bucket": "studentkick-7c190.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626140359495:android:040915f215d26cbef9ba62",
+        "android_client_info": {
+          "package_name": "com.example.studentkick"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626140359495-hjjsuvumkhmajgnns4nak3vtp8mdkcs5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentkick",
+            "certificate_hash": "d6f40e8590d5db1f779abb99e65f3cd3aae4a800"
+          }
+        },
+        {
+          "client_id": "626140359495-ipj36fdj8oahsb05j3to2meob7rofism.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlH1CZB36i2w6nmInHC4Y5s1Va6kVUfLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626140359495-ipj36fdj8oahsb05j3to2meob7rofism.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
