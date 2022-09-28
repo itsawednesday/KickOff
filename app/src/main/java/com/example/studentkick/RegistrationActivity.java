@@ -1,18 +1,19 @@
 package com.example.studentkick;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -29,17 +30,22 @@ public class RegistrationActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
     private ProgressDialog loading;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        toolbar = findViewById(R.id.regToolbar);
-        setSupportActionBar(toolbar);
+        //Hide toolbar
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        getSupportActionBar().setTitle("Registration");
 
-         mAuth = FirebaseAuth.getInstance();
+        //  toolbar = findViewById(R.id.regToolbar);
+        // setSupportActionBar(toolbar);
+
+        // getSupportActionBar().setTitle("Registration");
+
+        mAuth = FirebaseAuth.getInstance();
         loading = new ProgressDialog(this);
 
 
@@ -65,35 +71,35 @@ public class RegistrationActivity extends AppCompatActivity {
                 //error if field is empty
 
 
-                if (TextUtils.isEmpty(email)){
+                if (TextUtils.isEmpty(email)) {
                     regEmail.setError("Must enter email");
                     return;
 
                 }
-                if (TextUtils.isEmpty(password)){
+                if (TextUtils.isEmpty(password)) {
                     regPass.setError("Must enter password");
                     return;
 
                     //if fields are not empty
-                }else {
+                } else {
                     loading.setMessage("In progress..");
                     loading.setCanceledOnTouchOutside(false);
                     loading.show();
 
 
                     //If registration is successful then direct to the next activity
-                    mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if (task.isSuccessful()) {
 
 
-                                Intent intent = new Intent(RegistrationActivity.this, HomeActivity.class);
+                                Intent intent = new Intent(RegistrationActivity.this, DashboardActivity.class);
                                 startActivity(intent);
                                 finish();
                                 loading.dismiss();
-                            }else{
+                            } else {
                                 String error = task.getException().toString();
                                 Toast.makeText(RegistrationActivity.this, "Registration failed" + error, Toast.LENGTH_SHORT).show();
                                 loading.dismiss();
@@ -104,16 +110,10 @@ public class RegistrationActivity extends AppCompatActivity {
                 }
 
 
-
             }
         });
 
 
-
-
-
-
-
-
-    }}
+    }
+}
 

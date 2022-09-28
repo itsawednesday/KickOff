@@ -5,11 +5,31 @@
       <map>
         <entry key="app/src/main/res/drawable/box_shape.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/search_field.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1403985507246377" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.25186767578125" />
+        <entry key="app/src/main/res/layout/activity_drawer.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/activity_drawer_base.xml" value="0.1358695652173913" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.17" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_navigation.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/dashboard_item_1.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/app_bar_drawer.xml" value="0.1358695652173913" />
+        <entry key="app/src/main/res/layout/content_drawer.xml" value="0.1358695652173913" />
+        <entry key="app/src/main/res/layout/dashboard_item_1.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/dashboard_item_2.xml" value="0.12318840579710146" />
+        <entry key="app/src/main/res/layout/data_layout.xml" value="0.1358695652173913" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.12635869565217392" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.1358695652173913" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1358695652173913" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.1358695652173913" />
+        <entry key="app/src/main/res/layout/fragment_sports.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/main_nav_base.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/main_nav_header.xml" value="0.1358695652173913" />
+        <entry key="app/src/main/res/layout/nav_header_drawer.xml" value="0.1358695652173913" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
+        <entry key="app/src/main/res/menu/drawer.xml" value="0.14565277099609378" />
+        <entry key="app/src/main/res/menu/main_nav_menu.xml" value="0.18" />
       </map>
     </option>
   </component>

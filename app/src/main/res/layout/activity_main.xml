@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#4F3A75"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/unilogo"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        />
+        android:src="@drawable/unilogo" />
 
     <TextView
         android:id="@+id/text"
