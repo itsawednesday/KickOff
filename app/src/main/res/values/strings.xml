@@ -16,5 +16,10 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
+    <string name="hyperlink">For more sport societies please visit <a href= "https://sport.port.ac.uk/play-sports/clubs">https://sport.port.ac.uk/play-sports/clubs </a></string>
+    <string name="meet_like_minded_students_and_pursue_your_sporting_ambition">Meet like-minded students and pursue your sporting ambition.</string>
+    <string name="ravelin_sports_centre">Ravelin Sports Centre</string>
+    <string name="gym_pool_play"><![CDATA[Gym, pool & play!]]></string>
+
 
 </resources>

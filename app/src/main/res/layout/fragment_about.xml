@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary_color"
+
+    android:layout_height="match_parent">
+
+    tools:context=".DashboardActivity">
+
+
+
+
+
+
+    <TextView
+
+        android:id="@+id/main_hyperlink"
+        android:layout_width="414dp"
+        android:layout_height="136dp"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginRight="16dp"
+
+        android:text="@string/hyperlink"
+
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/meet_like_minded_students_and_pursue_your_sporting_ambition"
+        android:textColor="#121111"
+        android:textSize="20sp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

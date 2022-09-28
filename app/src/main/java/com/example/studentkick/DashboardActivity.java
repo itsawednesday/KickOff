@@ -1,7 +1,9 @@
 package com.example.studentkick;
 
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -15,12 +17,20 @@ import com.google.android.material.navigation.NavigationView;
 public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private final SportsFragment sportsFragment = new SportsFragment();
+    private final AboutFragment aboutFragment = new AboutFragment();
+
     private DrawerLayout drawer;
+
+   // TextView linkTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+        //Method to show the hyperlink in About page
+       // linkTextView = findViewById(R.id.main_hyperlink);
+        //linkTextView.setMovementMethod(LinkMovementMethod.getInstance());
 
         Toolbar toolbar = findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
@@ -47,6 +57,16 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
             case R.id.nav_sports:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         sportsFragment).commitNowAllowingStateLoss();
+                break;
+            case R.id.nav_about:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AboutFragment()).commit();
+                break;
+
+
+            case R.id.nav_ravelin:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new RavelinFragment()).commit();
                 break;
         }
 

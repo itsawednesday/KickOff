@@ -17,9 +17,6 @@
             android:name=".DrawerBaseActivity"
             android:exported="false" />
         <activity
-            android:name=".NavigationActivity"
-            android:exported="false" />
-        <activity
             android:name=".DashboardActivity"
             android:exported="false" />
         <activity

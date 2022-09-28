@@ -11,9 +11,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
 
 
@@ -132,13 +129,13 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
-                        android:layout_margin="12dp"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="6dp">
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="0dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -151,13 +148,14 @@
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/squash" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
                                 android:text="squash"
                                 android:textColor="#6f6f6f"
-                                android:textSize="18dp"/>
+                                android:textSize="18dp" />
 
 
                         </LinearLayout>
@@ -202,7 +200,7 @@
                         android:layout_height="wrap_content"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
-                        android:layout_margin="12dp"
+                        android:layout_margin="18dp"
                         app:cardCornerRadius="12dp"
                         app:cardElevation="6dp">
 
@@ -234,6 +232,6 @@
 
             </LinearLayout>
 
-        </ScrollView>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
