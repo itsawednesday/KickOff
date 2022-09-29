@@ -76,4 +76,5 @@
         android:text="Got account? Login here"
         android:textColor="#fff" />
 
+
 </LinearLayout>
