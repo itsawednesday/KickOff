@@ -17,11 +17,11 @@ jobs:
       uses: actions/setup-java@v1.4.2
       with:
         java - version : 1.8 
-    -name: Build with Gradle  
-     run: ./gradlew build
-    -name: Upload APK    
-     uses: actions/upload-artifact@v3.1.0  
-     with:    
+    - name: Build with Gradle  
+      run: ./gradlew build
+    - name: Upload APK    
+      uses: actions/upload-artifact@v3.1.0  
+      with:    
        name: app
        path: app/build/outputs/apk/debug/app-debug.apk
      
